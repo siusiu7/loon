@@ -21,7 +21,7 @@ const currencyNames = {
 };
 
 
-$.http.get({url: "https://api.ratesapi.io/api/latest?base=CNY"})
+$.http.get({url: "https://api.ratesapi.io/api/latest?base=JPY"})
     .then((response) => {
         const data = JSON.parse(response.body);
         const source = currencyNames[base];
